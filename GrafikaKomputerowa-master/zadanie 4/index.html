@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header>Filtry</header>
+        <div class="row" style="text-align: center;">
+            <div id="drop-area" class="col-sm-6 m-a">image</div>
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="tools" class="col-sm-12">
+                <div>
+                    Value<br>
+                    <input class="form-control" type="text" id="rgb-color"><br>
+                    <button class="btn btn-primary" id="button-add">Add</button>
+                    <button class="btn btn-primary" id="button-subtract">Subtract</button>
+                    <button class="btn btn-primary" id="button-multiply">Multiply</button>
+                    <button class="btn btn-primary" id="button-divide">Divide</button>
+                </div>
+                <div>
+                    Grayscale<br>
+                    <button class="btn btn-primary" id="button-grayscale-1">Gray</button>
+                </div>
+            </div>            
+        </div>
+        <div class="row" style="text-align: center;">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div>
+            <button id="reset" class="btn btn-primary">Reset</button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>

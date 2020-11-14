@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grafika komputerowa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Grafika komputerowa - Zadanie 6</header>
+    <div class="container">
+        <canvas id="canvas" width="800" height="450"></canvas>
+    </div>
+    Number of control points: <input type="number" id="control-points" value="3" min="3" max="20"><br>
+    Chaging control point coordinates: X - <input type="number" min="0" max="800" id="edit-x">, Y - <input type="number" min="0" max="800" id="edit-y"><button id="coords">Go!</button><br>
+    <button id="reset" class="clickable">Reset</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

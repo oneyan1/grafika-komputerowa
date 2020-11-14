@@ -1,0 +1,46 @@
+.rgba-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.rgba-block__colors{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.rgba-block__colorsbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.rgba-block__colorsvalue{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000000;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.alpha{
+    text-align: center;
+    font-size: 17px;
+}
+.value{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}

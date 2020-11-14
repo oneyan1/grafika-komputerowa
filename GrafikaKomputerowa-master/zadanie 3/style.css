@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+body {
+    background-attachment: fixed;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.8)
+      ), url("../assets/background.webp");
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    width: 100vw;
+}
+
+header {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+div#color-picking {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div#color-picking div.picking-section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+div#color-picking input {
+    margin: 5px;
+    padding: 5px;
+}
+
+div#rgb-color-text, div#rgb-color-numbers, div#cmyk-color {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 150px;
+    margin: 20px 20px 0;
+    transition: all .25s ease-in-out;
+    width: 150px;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    width: 100px;
+}
+
+input[type="number"] {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    width: 75px;
+}
+
+button {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    transition: all .25s ease-in-out;
+    width: 150px;
+}
+
+button:hover {
+    background: #5599ff;
+}
+
+canvas {
+    background: black;
+    border: 2px solid white;
+    border-radius: 20px;
+}

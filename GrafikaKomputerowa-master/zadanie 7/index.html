@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grafika komputerowa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Grafika komputerowa - Zadanie 7</header>
+    <div class="container">
+        <div class="tools">
+            <div>
+                Ax: <input type="number" id="line-x1" min="0" max="800" value="100">
+                Ay: <input type="number" id="line-y1" min="0" max="800" value="100">
+                Bx: <input type="number" id="line-x2" min="0" max="800" value="100">
+                By: <input type="number" id="line-y2" min="0" max="800" value="100">
+                <button class="clickable" id="draw-line" title="Draw line">DL</button>
+            </div>
+            <div>
+                Ax: <input type="number" id="rectangle-x1" min="0" max="800" value="100">
+                Ay: <input type="number" id="rectangle-y1" min="0" max="800" value="100">
+                Bx: <input type="number" id="rectangle-x2" min="0" max="800" value="100">
+                By: <input type="number" id="rectangle-y2" min="0" max="800" value="100">
+                <button class="clickable" id="draw-rectangle" title="Draw rectangle">DR</button>
+            </div>
+            <div>
+                Ox: <input type="number" id="circle-ox" min="0" max="800" value="200">
+                Oy: <input type="number" id="circle-oy" min="0" max="800" value="200">
+                R: <input type="number" id="circle-r" min="0" max="200" value="100">
+                <button class="clickable" id="draw-circle" title="Draw circle">DC</button>
+            </div>
+            <div>
+                <span class="tool active clickable" id="drawing-line" title="Drawing line">DL</span>
+                <span class="tool inactive clickable" id="drawing-rectangle" title="Drawing rectangle">DR</span>
+                <span class="tool inactive clickable" id="drawing-circle" title="Drawing circle">DC</span>
+            </div>
+            <div>
+                <span class="tool inactive clickable" id="selecting-figure" title="Selecting figure">SF</span>
+                <span class="tool inactive clickable" id="selecting-point" title="Selecting point">SP</span>
+            </div>
+            <div>
+                <button class="clickable" id="save">Save</button>
+                <button class="clickable" id="load">Load</button>
+            </div>
+            <div>
+                <button class="clickable" id="reset">
+                    Reset
+                </button>
+            </div>
+        </div>
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

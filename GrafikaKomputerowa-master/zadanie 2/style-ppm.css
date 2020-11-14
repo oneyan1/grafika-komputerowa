@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    font-size: 36px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+#landing-zone {
+    border: 2px dashed black;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 500px;
+    line-height: 150px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+	width: 250px; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 20px;
+    text-align: center;
+}
+
+ul li img{
+    height: 250px !important;
+}

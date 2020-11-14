@@ -1,0 +1,12 @@
+.chanel-input{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.chanel-switch{
+    margin-left: 15px;
+}
+

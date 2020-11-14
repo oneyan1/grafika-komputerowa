@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+body {
+    background-attachment: fixed;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.8)
+      ), url("../assets/background.webp");
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    width: 100vw;
+}
+
+header {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+div.container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input[type="number"] {
+    margin-right: 20px;
+    width: 50px;
+}
+
+button {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+canvas {
+    background: black;
+    border: 2px solid white;
+}
+
+span.tool {
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 10px 20px;
+    transition: all 0.25s ease-in-out;
+    width: 40px;
+}
+
+span.tool.active {
+    background: #5599ff;
+}
+
+span.tool.inactive {
+    background: transparent;
+}

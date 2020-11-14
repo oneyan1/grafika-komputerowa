@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grafika komputerowa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Grafika komputerowa - Zadanie 1</header>
+    <div class="container">
+        <div class="tools">
+            <span class="tool drawing active clickable" onclick="changeActiveTool('drawing')" title="Drawing">D</span>
+            <span class="tool moving inactive clickable" onclick="changeActiveTool('moving')" title="Moving">M</span>
+            <span class="tool resizing inactive clickable" onclick="changeActiveTool('resizing')" title="Resizing">R</span>
+            <span class="tool changing inactive clickable" onclick="changeActiveTool('changing')" title="Changing by textboxes">C</span><br>
+            <span class="figure line active clickable" onclick="changeActiveFigure('line')" title="Line">L</span>
+            <span class="figure rectangle inactive clickable" onclick="changeActiveFigure('rectangle')" title="Rectangle">R</span>
+            <span class="figure circle inactive clickable" onclick="changeActiveFigure('circle')" title="Circle">C</span><br>
+            <input type="number" id="line-from-x">
+            <input type="number" id="line-from-y">
+            <input type="number" id="line-to-x">
+            <input type="number" id="line-to-y"><br>
+            <button class="line clickable">
+                Draw line
+            </button><br>
+            <input type="number" id="rectangle-x">
+            <input type="number" id="rectangle-y">
+            <input type="number" id="rectangle-width">
+            <input type="number" id="rectangle-height"><br>
+            <button class="rectangle clickable">
+                Draw rectangle
+            </button><br>
+            <input type="number" id="circle-x">
+            <input type="number" id="circle-y">
+            <input type="number" id="circle-radius"><br>
+            <button class="circle clickable">
+                Draw circle
+            </button><br>
+            <button class="clear clickable">
+                Clear canvas
+            </button><br>
+        </div>
+        <canvas id="canvas" width="800" height="450"></canvas>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

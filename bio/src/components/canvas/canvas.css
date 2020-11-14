@@ -1,0 +1,100 @@
+canvas{
+    border: 1px solid grey;
+}
+
+.modifyImg{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-zoom__block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-zoom__block button{
+    margin: 10px;
+}
+
+.btn-zoom__block span{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.canvas-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.save-block{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.format label{
+    padding-right: 10px;
+}
+
+.control-block{
+    height: 100%;
+    border-left: 1px solid #000000;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin: 5px;
+    padding: 7px;
+}
+
+.title{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.streatch-block__inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px
+}
+
+.stretch-input{
+    margin-right: 3px;
+}
+
+.filter-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 130px;
+    justify-content: center;
+}
+
+.filter-input{
+    width: 35px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    background-color:#ede9e8;
+    padding: 0;
+}
+
+.matrix-input{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}

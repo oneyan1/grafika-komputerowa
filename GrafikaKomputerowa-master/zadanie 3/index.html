@@ -1,0 +1,125 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        div.c {
+            display: inline-block;
+            height: 30px;
+            margin-bottom: -4px;
+            width: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        const a = "e6b3ff";
+        const b = "ffff00";
+
+        const a_dec = parseInt(a, 16);
+        const b_dec = parseInt(b, 16);
+
+        const x = 250;
+
+        const r_difference = (parseInt(b.substr(0,2), 16) - parseInt(a.substr(0,2), 16)) / x;
+        const g_difference = (parseInt(b.substr(2,2), 16) - parseInt(a.substr(2,2), 16)) / x;
+        const b_difference = (parseInt(b.substr(4,2), 16) - parseInt(a.substr(4,2), 16)) / x;
+
+console.log(a.substr(0,2), a.substr(2,2), a.substr(4,2))
+        let current_r = parseInt(a.substr(0,2), 16);
+        let current_g = parseInt(a.substr(2,2), 16);
+        let current_b = parseInt(a.substr(4,2), 16);
+
+        let content = `<div class="c" style="background: #${a};"></div>`;
+
+        for (let i = 1; i <= x; i++) {
+            current_r += r_difference;
+            current_g += g_difference;
+            current_b += b_difference;
+            const rr = Math.round(current_r).toString(16);
+            const gg = Math.round(current_g).toString(16);
+            const bb = Math.round(current_b).toString(16);
+            const hexColor = `${rr}${gg}${bb}`;
+            console.log(hexColor);
+            content += `<div class="c" style="background: #${hexColor};"></div>`;
+        }
+        document.getElementById("container").innerHTML = content;
+    </script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grafika komputerowa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Grafika komputerowa - Zadanie 3</header>
+    <div id="color-picking">
+        <div>
+            <div class="picking-section">
+                <div>
+                    Enter RGB color hash<br><br>
+                    <input type="text" id="rgb-text"><br>
+                    <button id="rgb-button-text" class="clickable">RGB from text</button>
+                </div>
+                <div id="rgb-color-text"></div>
+            </div>
+            <span id="span-rgb-text">
+                RGB color hash:<br>
+                CMYK color:
+            </span>
+        </div>
+        <div>
+            <div class="picking-section">
+                <div>
+                    Enter RGB color components<br><br>
+                    <input type="number" id="rgb-number-r" min="0" max="255" value="0">
+                    <input type="number" id="rgb-number-g" min="0" max="255" value="0">
+                    <input type="number" id="rgb-number-b" min="0" max="255" value="0"><br>
+                    <button id="rgb-button-numbers" class="clickable">RGB from numbers</button>
+                </div>
+                <div id="rgb-color-numbers"></div>
+            </div>
+            <span id="span-rgb-numbers">
+                RGB color hash:<br>
+                CMYK color:
+            </span>
+        </div>
+        <div>
+            <div class="picking-section">
+                <div>
+                    Enter CMYK color components<br><br>
+                    C <input type="range" id="cmyk-slider-c" min="0" max="100" value="0" step="1" />
+                    M <input type="range" id="cmyk-slider-m" min="0" max="100" value="0" step="1" /><br>
+                    Y <input type="range" id="cmyk-slider-y" min="0" max="100" value="0" step="1" />
+                    K <input type="range" id="cmyk-slider-k" min="0" max="100" value="0" step="1" /><br>
+                    <button id="cmyk-button" class="clickable">CMYK from sliders</button>
+                </div>
+                <div id="cmyk-color"></div>
+            </div>
+            <span id="span-cmyk">
+                    RGB color hash:<br>
+                    CMYK color:
+            </span>
+        </div>
+    </div>
+    <canvas id="canvas" width="1000" height="600"></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
